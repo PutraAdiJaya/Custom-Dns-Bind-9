@@ -1,0 +1,5 @@
+zone "diblok.com" {type master; file "/etc/bind/db.blocked";};
+zone "terlarang.com" {type master; file "/etc/bind/db.blocked";};
+zone "ilegal.com" {type master; file "/etc/bind/db.blocked";};
+zone "yahoo.com" {type master; file "/etc/bind/db.blocked";};
+

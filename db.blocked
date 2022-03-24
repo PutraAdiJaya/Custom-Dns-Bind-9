@@ -1,0 +1,11 @@
+; BIND db file for ad servers - point all addresses to localhost
+$TTL    86400   ; one day
+@       IN      SOA     raspberry.home.lan. hostmaster.home.lan. (
+                            2013120901       ; serial number YYMMDDNN
+                            28800   ; refresh  8 hours
+                            7200    ; retry    2 hours
+                            864000  ; expire  10 days
+                            86400 ) ; min ttl  1 day
+  NS raspberry.home.lan.
+  A 127.0.0.1
+* IN      A       127.0.0.1
